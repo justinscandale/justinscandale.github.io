@@ -71,6 +71,9 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+  bottom: 0;
+  position: fixed;
+  min-width: 100%;
 }
 
 .gear {
