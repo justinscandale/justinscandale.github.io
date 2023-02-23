@@ -1,36 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Justin's Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Justin</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .city-image {
+            background-image: url('pgh.jpeg');
+            background-size: cover;
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            position: relative;
+            margin-top: -30px;
+        }
+        h1::after {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 48px;
+            background-color: white;
+            margin-left: 5px;
+            position: absolute;
+            animation: blink 1s linear infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+                margin-top: -20px;
+            }
+            nav a {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Justin's Portfolio Resposive?</h1>
-  </header>
-  
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="html/resume.html">Resume</a></li>
-      <li><a href="html/projects.html">Projects</a></li>
-      <li><a href="html/about.html">About</a></li>
-      <li><a href="html/education.html">Education</a></li>
-    </ul>
-  </nav>
-  
-  <main>
-    <section id="home">
-      <h2>Welcome to my portfolio</h2>
-      <p>Here you can find my projects and my resume.</p>
-    </section>
-  </main>
-  
-  <footer>
-    <p>&copy; Justin 2023</p>
-  </footer>
-  
-  <div class="gear"></div>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#coursework">Coursework</a>
+    <a href="#about">About</a>
+</nav>
+    <div class="city-image">
+        <h1>Justin</h1>
+    </div>
+
 </body>
 </html>

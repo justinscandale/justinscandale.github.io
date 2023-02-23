@@ -1,82 +1,51 @@
-* {
-  box-sizing: border-box;
-}
 
-body {
+*{
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-  overflow: hidden;
+  box-sizing: border-box;
 }
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+.home{
+  background-image: url('pgh.jpeg');
 }
-
-nav {
-  background-color: #444;
-  color: #fff;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  margin: 10;
-  padding: 10;
-  border-color: aquamarine;
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
+body{
+  width: 100%;
+  max-width: 1400px;
   display: block;
-  padding: 15px;
+  margin: auto;
+  min-height: 100vh;
+  background: #191919;
+  font-family: sans-serif;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  background: #1a1a1a;
+}
+
+nav li{
+  list-style: none;
+  display: flex;
+}
+
+nav li a{
   color: #fff;
+  opacity: 0.5;
   text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  margin: 0 20px;
+  line-height: 80px;
+  transition: .5s;
+  font-size: 20px;
 }
 
-nav ul li a:hover {
-  background-color: #555;
-}
-
-main {
-  padding: 20px;
-  text-align: center;
-}
-
-section {
-  padding: 20px;
-  margin-top: 50px;
-  background-color: #fff;
-  box-shadow: 0 0 5px #333;
-  text-align: left;
-}
-
-section h2 {
-  margin-top: 0;
-}
-
-section p {
-  margin-bottom: 0;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  bottom: 0;
-  position: fixed;
-  min-width: 100%;
-}
-
-.gear {
-  position: fixed;
-  top: 50%;
+nav li a:hover, .link.active a{
+  opacity: 1;
 }
